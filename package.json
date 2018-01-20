@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "osmanov",
+  "homepage": "http://osmanov.github.io/css-practice",
   "license": "MIT",
   "scripts": {
     "gulp": "./node_modules/.bin/gulp"
@@ -12,6 +13,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-clean-css": "^3.9.2",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^4.1.0",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^3.1.0",

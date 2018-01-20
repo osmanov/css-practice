@@ -12,6 +12,7 @@ const gulp = require("gulp"),
   pngquant = require("imagemin-pngquant"),
   rimraf = require("rimraf"),
   browserSync = require("browser-sync"),
+  ghPages = require("gulp-gh-pages"),
   reload = browserSync.reload;
 
 const path = {
@@ -106,3 +107,6 @@ gulp.task("watch", function() {
   });
 });
 gulp.task("default", ["build", "webserver", "watch"]);
+gulp.task("deploy", function() {
+  return gulp.src("./build/**/*").pipe(ghPages());
+});
