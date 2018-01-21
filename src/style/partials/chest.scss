@@ -1,0 +1,45 @@
+.chest {
+  color: $color-black;
+  font-family: $font-circle-regular;
+
+  display: flex;
+  flex-direction: column;
+  background: $color-supernova;
+  padding-top: 10px;
+  padding-bottom: 45px;
+  @media only screen and (min-width: $screen-desktop-from) {
+    flex-direction: row;
+  }
+  &_banner {
+    display: flex;
+    justify-content: center;
+    &__icon {
+      transform: scale(0.67, 0.67);
+      @media only screen and (min-width: $screen-desktop-from) {
+        transform: scale(1, 1);
+      }
+    }
+
+    &__text_v {
+      display: none;
+      @media only screen and (min-width: $screen-desktop-from) {
+        display: block;
+      }
+    }
+    &__text_h {
+      display: none;
+      @media only screen and (min-width: $screen-desktop-from) {
+        display: block;
+      }
+    }
+  }
+  &_description {
+    font-size: 22px;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 146%;
+    @media only screen and (min-width: $screen-desktop-from) {
+      font-size: 40px;
+    }
+  }
+}
