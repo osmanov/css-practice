@@ -1,0 +1,72 @@
+.belly {
+  padding-top: 39px;
+  &_title {
+    display: flex;
+    justify-content: center;
+    font-family: $font-circle-bold;
+    font-size: 30px;
+    color: $color-black;
+    line-height: 134%;
+    @media only screen and (min-width: $screen-desktop-from) {
+      font-family: $font-circle-regular;
+      font-size: 40px;
+      line-height: 120%;
+      margin-bottom: 58px;
+    }
+  }
+  &_partners {
+    &_fp {
+      background-image: url(../img/icon-ps-fp.png);
+      width: 171px;
+      height: 66px;
+    }
+    &_cash {
+      background-image: url(../img/icon-ps-cash.png);
+      width: 206px;
+      height: 66px;
+    }
+    &_pm {
+      background-image: url(../img/icon-ps-pm.png);
+      width: 218px;
+      height: 66px;
+    }
+    &_wm {
+      background-image: url(../img/icon-ps-wm.png);
+      width: 198px;
+      height: 66px;
+    }
+    &_net {
+      background-image: url(../img/icon-ps-net.png);
+      width: 240px;
+      height: 66px;
+    }
+    &_visa {
+      background-image: url(../img/icon-ps-visa.png);
+      width: 182px;
+      height: 56px;
+    }
+    &_pw {
+      background-image: url(../img/icon-ps-pw.png);
+      width: 171px;
+      height: 66px;
+    }
+    &_uk {
+      background-image: url(../img/icon-ps-uk.png);
+      width: 170px;
+      height: 66px;
+    }
+  }
+  .belly_group_first,
+  .belly_group_second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .belly_group_first {
+    padding: 0 150px;
+    margin-bottom: 65px;
+  }
+  .belly_group_second {
+    padding: 0 158px;
+  }
+}
