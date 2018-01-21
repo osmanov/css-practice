@@ -15,14 +15,11 @@ body {
   width: 100%;
   height: 100%;
   font-family: $font-arial-mt;
-  background: $color-alto;
 }
 .container {
   margin: 0 auto;
-  background: red;
   min-width: $min-width;
   @media only screen and (min-width: $screen-desktop-from) {
-    background: green;
     max-width: $max-width;
   }
 }
