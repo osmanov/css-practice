@@ -1,5 +1,5 @@
 .head {
-  background: url(../../img/back_null_percents.jpg) no-repeat;
+  background: url(../img/back_null_percents.jpg) no-repeat;
   background-size: cover;
   background-position: 80% 0;
   font-family: $font-circle-extra-light;
@@ -16,7 +16,7 @@
       margin-bottom: 158px;
     }
     &__logo {
-      background-image: url("../../img/logo.svg");
+      background-image: url(../img/logo.svg);
       width: 104px;
       height: 56px;
     }
