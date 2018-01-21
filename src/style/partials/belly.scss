@@ -1,5 +1,10 @@
 .belly {
-  padding-top: 39px;
+  padding-top: 27px;
+  padding-bottom: 54px;
+  @media only screen and (min-width: $screen-desktop-from) {
+    padding-top: 39px;
+  }
+
   &_title {
     display: flex;
     justify-content: center;
@@ -7,11 +12,15 @@
     font-size: 30px;
     color: $color-black;
     line-height: 134%;
+    padding: 0 28px;
+    text-align: center;
     @media only screen and (min-width: $screen-desktop-from) {
       font-family: $font-circle-regular;
       font-size: 40px;
       line-height: 120%;
       margin-bottom: 58px;
+      padding: 0;
+      width: 100%;
     }
   }
   &_partners {
@@ -55,15 +64,40 @@
       width: 170px;
       height: 66px;
     }
+    &__slider {
+      display: flex;
+      padding: 45px 24px;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 22px;
+      &_arrow_left,
+      &_arrow_right {
+        width: 24px;
+        height: 24px;
+        background: url(../img/Arrow_Copy_2.png);
+      }
+      &_arrow_right {
+        transform: rotate(180deg);
+      }
+      &_arrow_left {
+        transform: rotate(0deg);
+      }
+      @media only screen and (min-width: $screen-desktop-from) {
+        display: none;
+      }
+    }
     @media only screen and (min-width: $screen-desktop-from) {
       margin-bottom: 125px;
     }
   }
   &_group_first,
   &_group_second {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: none;
+    @media only screen and (min-width: $screen-desktop-from) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
   &_group_first {
     padding: 0 150px;
@@ -74,14 +108,26 @@
   }
   &_group_third {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 115px;
+    margin-bottom: 30px;
     @media only screen and (min-width: $screen-desktop-from) {
       margin-bottom: 50px;
+      justify-content: space-between;
+    }
+    & .input {
+      display: none;
+      @media only screen and (min-width: $screen-desktop-from) {
+        display: block;
+      }
     }
   }
   &_description {
     text-align: center;
+    font-family: $font-circle-extra-light;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
     & a {
       color: $color-mariner;
     }
@@ -90,7 +136,8 @@
       font-size: 14px;
       color: $color-black;
       line-height: 143%;
-      padding: 0 340px;
+      padding-left: 340px;
+      padding-right: 340px;
     }
   }
 }
