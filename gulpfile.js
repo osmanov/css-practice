@@ -19,17 +19,20 @@ const path = {
   build: {
     html: "build/",
     css: "build/css/",
-    img: "build/img/"
+    img: "build/img/",
+    fonts: "build/fonts/"
   },
   src: {
     html: "src/*.html",
     style: "src/style/main.scss",
-    img: "src/img/**/*.*"
+    img: "src/img/**/*.*",
+    fonts: "src/fonts/**/*.*"
   },
   watch: {
     html: "src/**/*.html",
     style: "src/style/**/*.scss",
-    img: "src/img/**/*.*"
+    img: "src/img/**/*.*",
+    fonts: "src/fonts/**/*.*"
   },
   clean: "./build"
 };
@@ -87,8 +90,10 @@ gulp.task("image:build", function() {
     .pipe(gulp.dest(path.build.img))
     .pipe(reload({ stream: true }));
 });
-
-gulp.task("build", ["html:build", "style:build", "image:build"]);
+gulp.task("fonts:build", function() {
+  gulp.src(path.src.fonts).pipe(gulp.dest(path.build.fonts));
+});
+gulp.task("build", ["html:build", "style:build", "fonts:build", "image:build"]);
 gulp.task("watch", function() {
   watch([path.watch.html], function(event, cb) {
     gulp.start("html:build");
@@ -101,6 +106,9 @@ gulp.task("watch", function() {
   });
   watch([path.watch.img], function(event, cb) {
     gulp.start("image:build");
+  });
+  watch([path.watch.fonts], function(event, cb) {
+    gulp.start("fonts:build");
   });
   watch([path.watch.fonts], function(event, cb) {
     gulp.start("fonts:build");

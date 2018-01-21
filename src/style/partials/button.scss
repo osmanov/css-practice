@@ -1,0 +1,22 @@
+.button {
+  width: 304px;
+  height: 72px;
+  color: $color-black;
+  font-size: 11px;
+  font-family: $font-circle-regular;
+  text-transform: uppercase;
+  background: $color-supernova;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  & > :first-child {
+    padding-left: 32px;
+  }
+  &:after {
+    display: block;
+    margin-right: 24px;
+    transform: rotate(180deg);
+    content: url(../../img/Arrow_Copy_2.png);
+  }
+}

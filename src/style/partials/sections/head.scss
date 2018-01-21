@@ -1,0 +1,55 @@
+.head {
+  background: url(../../img/back_null_percents.jpg) no-repeat;
+  background-size: cover;
+  font-family: $font-circle-extra-light;
+  padding: 0 24px;
+  @media only screen and (min-width: $screen-desktop-from) {
+    padding: 48px 56px 64px;
+  }
+  &_top {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (min-width: $screen-desktop-from) {
+      margin-bottom: 158px;
+    }
+    &__logo {
+      background-image: url("../../img/logo.svg");
+      width: 104px;
+      height: 56px;
+    }
+    &__menu {
+      display: none;
+      font-size: 11px;
+      font-family: $font-circle-regular;
+      text-transform: uppercase;
+      @media only screen and (min-width: $screen-desktop-from) {
+        display: flex;
+        padding-top: 13px;
+      }
+      &_left {
+        color: $color-white;
+      }
+      &_right {
+        color: $color-supernova;
+      }
+    }
+  }
+
+  &_title {
+    font-size: 40px;
+    color: $color-white;
+    @media only screen and (min-width: $screen-desktop-from) {
+      font-size: 66px;
+      margin-bottom: 20px;
+    }
+  }
+  &_subtitle {
+    font-size: 24px;
+    color: $color-alto;
+    @media only screen and (min-width: $screen-desktop-from) {
+      font-size: 30px;
+      margin-bottom: 38px;
+    }
+  }
+}
