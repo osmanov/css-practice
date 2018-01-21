@@ -1,35 +1,53 @@
 .chest {
   color: $color-black;
   font-family: $font-circle-regular;
-
   display: flex;
   flex-direction: column;
   background: $color-supernova;
-  padding-top: 10px;
-  padding-bottom: 45px;
+
+  padding-bottom: 63px;
   @media only screen and (min-width: $screen-desktop-from) {
     flex-direction: row;
+    padding: 30px 35px 50px 50px;
+  }
+  position: relative;
+  &_text__v,
+  &_banner_text__h {
+    display: none;
+    @media only screen and (min-width: $screen-desktop-from) {
+      display: block;
+      font-family: $font-circle-bold;
+      font-size: 20px;
+      line-height: 160%;
+    }
+  }
+  &_text__v {
+    display: none;
+    @media only screen and (min-width: $screen-desktop-from) {
+      display: block;
+      position: absolute;
+      bottom: 64px;
+      left: 50px;
+      transform: rotate(-90deg);
+      transform-origin: left top 0;
+    }
+  }
+  &_banner_text__h {
+    padding-left: 53px;
   }
   &_banner {
     display: flex;
     justify-content: center;
+    padding-top: 15px;
+    @media only screen and (min-width: $screen-desktop-from) {
+      display: block;
+      padding-left: 135px;
+    }
     &__icon {
       transform: scale(0.67, 0.67);
       @media only screen and (min-width: $screen-desktop-from) {
         transform: scale(1, 1);
-      }
-    }
-
-    &__text_v {
-      display: none;
-      @media only screen and (min-width: $screen-desktop-from) {
-        display: block;
-      }
-    }
-    &__text_h {
-      display: none;
-      @media only screen and (min-width: $screen-desktop-from) {
-        display: block;
+        margin-bottom: 20px;
       }
     }
   }
@@ -37,9 +55,19 @@
     font-size: 22px;
     text-align: center;
     padding: 0 20px;
-    line-height: 146%;
+    // line-height: 127%;
     @media only screen and (min-width: $screen-desktop-from) {
-      font-size: 40px;
+      display: none;
+    }
+    &__desktop {
+      display: none;
+      @media only screen and (min-width: $screen-desktop-from) {
+        display: block;
+        font-size: 40px;
+        text-align: left;
+        padding: 72px 0 0 152px;
+        line-height: 120%;
+      }
     }
   }
 }
