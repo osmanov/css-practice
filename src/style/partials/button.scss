@@ -1,5 +1,5 @@
 .button {
-  width: 304px;
+  width: 352px;
   height: 72px;
   color: $color-black;
   font-size: 11px;
@@ -15,8 +15,14 @@
   }
   &:after {
     display: block;
-    margin-right: 24px;
+    margin-right: 16px;
     transform: rotate(180deg);
     content: url(../../img/Arrow_Copy_2.png);
+    @media only screen and (min-width: $screen-desktop-from) {
+      margin-right: 24px;
+    }
+  }
+  @media only screen and (min-width: $screen-desktop-from) {
+    width: 304px;
   }
 }
