@@ -55,18 +55,42 @@
       width: 170px;
       height: 66px;
     }
+    @media only screen and (min-width: $screen-desktop-from) {
+      margin-bottom: 125px;
+    }
   }
-  .belly_group_first,
-  .belly_group_second {
+  &_group_first,
+  &_group_second {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .belly_group_first {
+  &_group_first {
     padding: 0 150px;
     margin-bottom: 65px;
   }
-  .belly_group_second {
+  &_group_second {
     padding: 0 158px;
+  }
+  &_group_third {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 115px;
+    @media only screen and (min-width: $screen-desktop-from) {
+      margin-bottom: 50px;
+    }
+  }
+  &_description {
+    text-align: center;
+    & a {
+      color: $color-mariner;
+    }
+    @media only screen and (min-width: $screen-desktop-from) {
+      font-family: $font-circle-regular;
+      font-size: 14px;
+      color: $color-black;
+      line-height: 143%;
+      padding: 0 340px;
+    }
   }
 }

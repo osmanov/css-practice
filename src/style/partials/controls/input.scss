@@ -1,0 +1,17 @@
+.input {
+  color: $color-black;
+  width: 328px;
+  height: 70px;
+  padding-left: 30px;
+  border: none;
+  outline: none;
+  background-color: $color-gallery;
+  &::placeholder {
+    font-family: $font-circle-light;
+  }
+  &:focus {
+    background-color: $color-white;
+    border: 1px solid $color-alto-darker;
+    box-shadow: 0 0 8px 2px $color-alto-darker;
+  }
+}
