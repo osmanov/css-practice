@@ -140,16 +140,75 @@
     color: $color-dove-gray;
     text-align: center;
     padding: 37px 28px 40px;
+    position: relative;
+    &__left {
+      @media only screen and (min-width: $screen-desktop-from) {
+        width: 835px;
+      }
+    }
+
     @media only screen and (min-width: $screen-desktop-from) {
       font-size: 13px;
       text-align: left;
       padding-right: 0;
-      width: 835px;
+
       padding: 0 0 0 60px;
     }
     &__left {
       &_top {
         margin-bottom: 10px;
+      }
+    }
+  }
+  .marks {
+    display: none;
+    @media only screen and (min-width: $screen-desktop-from) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 350px;
+      height: 350px;
+      &_beliz {
+        width: 60px;
+        height: 60px;
+        background-image: url(../img/beliz.png);
+      }
+      &_sysec {
+        width: 116px;
+        height: 60px;
+        margin-right: 34px;
+        background-image: url(../img/sysec.png);
+      }
+      &_cascade {
+        width: 80px;
+        height: 47px;
+        background-image: url(../img/cascade.png);
+      }
+
+      &_nqa {
+        margin-right: 34px;
+        width: 42px;
+        height: 58px;
+        background-image: url(../img/icon-nqa.png);
+      }
+      &_sm {
+        margin-right: 34px;
+        width: 66px;
+        height: 21px;
+        background-image: url(../img/icon-sm.png);
+      }
+      &_row {
+        display: flex;
+        align-items: center;
+        &:first-child {
+          padding-left: 79px;
+        }
+        &:last-child {
+          margin-top: 27px;
+          padding-left: 40px;
+        }
       }
     }
   }
