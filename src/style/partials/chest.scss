@@ -6,6 +6,9 @@
   background: $color-supernova;
 
   padding-bottom: 63px;
+  @media only screen and (min-width: $screen-tablet-from) {
+    padding-bottom: 45px;
+  }
   @media only screen and (min-width: $screen-desktop-from) {
     flex-direction: row;
     padding: 30px 35px 50px 50px;
@@ -45,9 +48,12 @@
     }
     &__icon {
       transform: scale(0.67, 0.67);
+      @media only screen and (min-width: $screen-tablet-from) {
+        transform: scale(0.8, 0.8);
+        margin-bottom: 20px;
+      }
       @media only screen and (min-width: $screen-desktop-from) {
         transform: scale(1, 1);
-        margin-bottom: 20px;
       }
     }
   }
@@ -56,6 +62,9 @@
     text-align: center;
     padding: 0 20px;
     // line-height: 127%;
+    @media only screen and (min-width: $screen-tablet-from) {
+      font-size: 32px;
+    }
     @media only screen and (min-width: $screen-desktop-from) {
       display: none;
     }

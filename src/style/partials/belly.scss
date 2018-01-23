@@ -1,10 +1,12 @@
 .belly {
   padding-top: 27px;
   padding-bottom: 54px;
+  @media only screen and (min-width: $screen-tablet-from) {
+    padding-bottom: 20px;
+  }
   @media only screen and (min-width: $screen-desktop-from) {
     padding-top: 39px;
   }
-
   &_title {
     display: flex;
     justify-content: center;
@@ -82,7 +84,29 @@
       &_arrow_left {
         transform: rotate(0deg);
       }
-      @media only screen and (min-width: $screen-desktop-from) {
+      &_tablet {
+        display: none;
+        @media only screen and (min-width: $screen-tablet-from) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 45px 24px;
+        }
+        @media only screen and (max-width: 800px) {
+          .belly_partners_wm {
+            display: none;
+          }
+        }
+        @media only screen and (max-width: 545px) {
+          .belly_partners_pm {
+            display: none;
+          }
+        }
+        @media only screen and (min-width: $screen-desktop-from) {
+          display: none;
+        }
+      }
+      @media only screen and (min-width: $screen-tablet-from) {
         display: none;
       }
     }

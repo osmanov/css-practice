@@ -4,7 +4,7 @@
   background-position: 80% 0;
   font-family: $font-circle-extra-light;
   padding: 24px 24px 32px;
-  @media only screen and (min-width: $screen-desktop-from) {
+  @media only screen and (min-width: $screen-tablet-from) {
     padding: 48px 56px 64px;
     background-position: center;
   }
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 200px;
-    @media only screen and (min-width: $screen-desktop-from) {
+    @media only screen and (min-width: $screen-tablet-from) {
       margin-bottom: 158px;
     }
     &__logo {
@@ -25,7 +25,7 @@
       font-size: 11px;
       font-family: $font-circle-regular;
       text-transform: uppercase;
-      @media only screen and (min-width: $screen-desktop-from) {
+      @media only screen and (min-width: $screen-tablet-from) {
         display: flex;
         padding-top: 13px;
       }
@@ -43,7 +43,7 @@
     font-size: 40px;
     color: $color-white;
     margin-bottom: 29px;
-    @media only screen and (min-width: $screen-desktop-from) {
+    @media only screen and (min-width: $screen-tablet-from) {
       font-size: 66px;
       margin-bottom: 20px;
     }
@@ -52,7 +52,7 @@
     font-size: 24px;
     color: $color-alto;
     margin-bottom: 35px;
-    @media only screen and (min-width: $screen-desktop-from) {
+    @media only screen and (min-width: $screen-tablet-from) {
       font-size: 30px;
       margin-bottom: 38px;
     }

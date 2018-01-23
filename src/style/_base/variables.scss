@@ -6,7 +6,9 @@ $font-circle-light: "CirceLight";
 $font-circle-regular: "CirceRegular";
 
 //--SCREEN SIZE
-$screen-desktop-from: 481px;
+$screen-desktop-from: 1280px;
+$screen-tablet-from: 481px;
+$screen-tablet-to: 1279px;
 $max-width: 1280px;
 $min-width: 480px;
 

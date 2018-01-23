@@ -10,10 +10,20 @@
     justify-content: space-between;
     padding: 57px 63px 40px;
     align-items: center;
+    @media only screen and (min-width: $screen-tablet-from) {
+      justify-content: center;
+      & > div {
+        margin: 10px;
+      }
+      //padding: 0 470px 30px;
+    }
     @media only screen and (min-width: $screen-desktop-from) {
       justify-content: space-between;
       padding: 0 470px 30px;
       border-bottom: 1px solid adjust-color($color-dusty-gray-darker, -0.7);
+      & > div {
+        margin: 0;
+      }
     }
 
     &_vk {
@@ -169,7 +179,6 @@
       right: 0;
 
       width: 350px;
-      height: 350px;
       &_beliz {
         width: 60px;
         height: 60px;
